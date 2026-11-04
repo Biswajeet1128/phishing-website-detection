@@ -1,0 +1,36 @@
+{
+    "track": "B",
+    "feature_names": [
+        "having_IP_Address",
+        "URL_Length",
+        "Shortining_Service",
+        "having_At_Symbol",
+        "double_slash_redirecting",
+        "Prefix_Suffix",
+        "having_Sub_Domain",
+        "HTTPS_token"
+    ],
+    "num_features": 8,
+    "num_train_samples": 8844,
+    "num_test_samples": 2211,
+    "random_state": 42,
+    "training_times": {
+        "Decision_Tree": 1.8468906879425049,
+        "Gaussian_NB": 0.002167224884033203,
+        "Categorical_NB": 0.0033659934997558594,
+        "Random_Forest": 12.547606468200684,
+        "Logistic_Regression": 0.01958441734313965
+    },
+    "best_dt_params": {
+        "criterion": "entropy",
+        "max_depth": 6,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2
+    },
+    "best_rf_params": {
+        "max_depth": 8,
+        "min_samples_leaf": 1,
+        "min_samples_split": 5,
+        "n_estimators": 100
+    }
+}

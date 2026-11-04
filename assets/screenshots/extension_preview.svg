@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 540" width="840" height="540">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+  </defs>
+
+  <rect width="840" height="540" fill="#0f172a"/>
+
+  <!-- Title -->
+  <text x="420" y="40" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="18" font-weight="bold" fill="#f8fafc" text-anchor="middle">
+    PhishShield AI — Chrome Browser Extension UI States
+  </text>
+  <text x="420" y="60" font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, sans-serif" font-size="12" fill="#94a3b8" text-anchor="middle">
+    Manifest V3 • Real-Time Client-Side Machine Learning URL Assessment
+  </text>
+
+  <!-- Card 1: Legitimate State (Left) -->
+  <g transform="translate(30, 80)" filter="url(#shadow)">
+    <!-- Container -->
+    <rect width="370" height="420" rx="10" fill="#0a0e17" stroke="#1f2937" stroke-width="1.5"/>
+    
+    <!-- Header -->
+    <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff">PhishShield <tspan fill="#3b82f6">AI</tspan></text>
+    <rect x="270" y="18" width="80" height="18" rx="9" fill="rgba(59,130,246,0.15)" stroke="rgba(59,130,246,0.3)"/>
+    <text x="310" y="30" font-family="sans-serif" font-size="9" font-weight="bold" fill="#60a5fa" text-anchor="middle">Model B Active</text>
+
+    <!-- URL Card -->
+    <rect x="15" y="45" width="340" height="42" rx="6" fill="#121826" stroke="#232d42"/>
+    <text x="25" y="58" font-family="sans-serif" font-size="8" font-weight="bold" fill="#6b7280">CURRENT TAB URL</text>
+    <text x="25" y="74" font-family="monospace" font-size="10.5" fill="#cbd5e1">🔒 https://www.google.com</text>
+
+    <!-- Status Banner: Safe -->
+    <rect x="15" y="95" width="340" height="60" rx="8" fill="rgba(16,185,129,0.12)" stroke="rgba(16,185,129,0.4)"/>
+    <circle cx="45" cy="125" r="18" fill="rgba(16,185,129,0.2)"/>
+    <text x="45" y="131" font-family="sans-serif" font-size="16" text-anchor="middle">🛡️</text>
+    <text x="75" y="118" font-family="sans-serif" font-size="12" font-weight="bold" fill="#34d399">LEGITIMATE WEBSITE</text>
+    <text x="75" y="136" font-family="sans-serif" font-size="9.5" fill="#a7f3d0">URL structure adheres to authentic web conventions.</text>
+
+    <!-- Metrics Grid -->
+    <rect x="15" y="165" width="165" height="52" rx="6" fill="#121826" stroke="#232d42"/>
+    <text x="25" y="180" font-family="sans-serif" font-size="8" font-weight="bold" fill="#6b7280">THREAT LEVEL</text>
+    <text x="25" y="198" font-family="sans-serif" font-size="12" font-weight="bold" fill="#34d399">LOW RISK</text>
+    <rect x="25" y="204" width="145" height="5" rx="2.5" fill="#1a2234"/>
+    <rect x="25" y="204" width="20" height="5" rx="2.5" fill="#10b981"/>
+
+    <rect x="190" y="165" width="165" height="52" rx="6" fill="#121826" stroke="#232d42"/>
+    <text x="200" y="180" font-family="sans-serif" font-size="8" font-weight="bold" fill="#6b7280">PHISHING RISK</text>
+    <text x="200" y="202" font-family="sans-serif" font-size="16" font-weight="bold" fill="#34d399">0%</text>
+    <text x="235" y="202" font-family="sans-serif" font-size="9" fill="#9ca3af">Confidence: 100%</text>
+
+    <!-- Feature Indicators -->
+    <rect x="15" y="225" width="340" height="115" rx="6" fill="#121826" stroke="#232d42"/>
+    <text x="25" y="240" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#9ca3af">URL SECURITY INDICATORS</text>
+    <rect x="290" y="230" width="55" height="14" rx="7" fill="#1a2234"/>
+    <text x="317" y="240" font-family="sans-serif" font-size="8" fill="#9ca3af" text-anchor="middle">0 Flagged</text>
+
+    <text x="25" y="260" font-family="sans-serif" font-size="9.5" fill="#e2e8f0">• Domain Name Used</text>
+    <rect x="295" y="250" width="45" height="13" rx="3" fill="rgba(16,185,129,0.15)"/>
+    <text x="317" y="260" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#34d399" text-anchor="middle">SAFE</text>
+
+    <text x="25" y="280" font-family="sans-serif" font-size="9.5" fill="#e2e8f0">• Normal URL Length (&lt;54 chars)</text>
+    <rect x="295" y="270" width="45" height="13" rx="3" fill="rgba(16,185,129,0.15)"/>
+    <text x="317" y="280" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#34d399" text-anchor="middle">SAFE</text>
+
+    <text x="25" y="300" font-family="sans-serif" font-size="9.5" fill="#e2e8f0">• Clean Domain Without Hyphens</text>
+    <rect x="295" y="290" width="45" height="13" rx="3" fill="rgba(16,185,129,0.15)"/>
+    <text x="317" y="300" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#34d399" text-anchor="middle">SAFE</text>
+
+    <text x="25" y="320" font-family="sans-serif" font-size="9.5" fill="#e2e8f0">• Standard Subdomain Count (1 dot)</text>
+    <rect x="295" y="310" width="45" height="13" rx="3" fill="rgba(16,185,129,0.15)"/>
+    <text x="317" y="320" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#34d399" text-anchor="middle">SAFE</text>
+
+    <!-- Guidance Box -->
+    <rect x="15" y="350" width="340" height="42" rx="4" fill="rgba(30,41,59,0.5)" stroke="#3b82f6" stroke-width="0.5"/>
+    <text x="25" y="365" font-family="sans-serif" font-size="9" font-weight="bold" fill="#93c5fd">🛡️ Security Guidance</text>
+    <text x="25" y="380" font-family="sans-serif" font-size="8.5" fill="#cbd5e1">URL analysis indicates standard website structure. Safe browsing.</text>
+  </g>
+
+  <!-- Card 2: Phishing State (Right) -->
+  <g transform="translate(440, 80)" filter="url(#shadow)">
+    <!-- Container -->
+    <rect width="370" height="420" rx="10" fill="#0a0e17" stroke="#1f2937" stroke-width="1.5"/>
+    
+    <!-- Header -->
+    <text x="20" y="32" font-family="sans-serif" font-size="14" font-weight="bold" fill="#ffffff">PhishShield <tspan fill="#3b82f6">AI</tspan></text>
+    <rect x="270" y="18" width="80" height="18" rx="9" fill="rgba(59,130,246,0.15)" stroke="rgba(59,130,246,0.3)"/>
+    <text x="310" y="30" font-family="sans-serif" font-size="9" font-weight="bold" fill="#60a5fa" text-anchor="middle">Model B Active</text>
+
+    <!-- URL Card -->
+    <rect x="15" y="45" width="340" height="42" rx="6" fill="#121826" stroke="#232d42"/>
+    <text x="25" y="58" font-family="sans-serif" font-size="8" font-weight="bold" fill="#6b7280">CURRENT TAB URL</text>
+    <text x="25" y="74" font-family="monospace" font-size="9.5" fill="#fca5a5">⚠️ http://secure-paypal-login.billing-update.com//verify</text>
+
+    <!-- Status Banner: Phish -->
+    <rect x="15" y="95" width="340" height="60" rx="8" fill="rgba(239,68,68,0.15)" stroke="rgba(239,68,68,0.5)"/>
+    <circle cx="45" cy="125" r="18" fill="rgba(239,68,68,0.25)"/>
+    <text x="45" y="131" font-family="sans-serif" font-size="16" text-anchor="middle">🚨</text>
+    <text x="75" y="118" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f87171">SUSPICIOUS PHISHING URL</text>
+    <text x="75" y="136" font-family="sans-serif" font-size="9.5" fill="#fecaca">High probability of phishing detected by Machine Learning.</text>
+
+    <!-- Metrics Grid -->
+    <rect x="15" y="165" width="165" height="52" rx="6" fill="#121826" stroke="#232d42"/>
+    <text x="25" y="180" font-family="sans-serif" font-size="8" font-weight="bold" fill="#6b7280">THREAT LEVEL</text>
+    <text x="25" y="198" font-family="sans-serif" font-size="12" font-weight="bold" fill="#f87171">CRITICAL RISK</text>
+    <rect x="25" y="204" width="145" height="5" rx="2.5" fill="#1a2234"/>
+    <rect x="25" y="204" width="140" height="5" rx="2.5" fill="#ef4444"/>
+
+    <rect x="190" y="165" width="165" height="52" rx="6" fill="#121826" stroke="#232d42"/>
+    <text x="200" y="180" font-family="sans-serif" font-size="8" font-weight="bold" fill="#6b7280">PHISHING RISK</text>
+    <text x="200" y="202" font-family="sans-serif" font-size="16" font-weight="bold" fill="#f87171">97%</text>
+    <text x="235" y="202" font-family="sans-serif" font-size="9" fill="#9ca3af">Confidence: 97.3%</text>
+
+    <!-- Feature Indicators -->
+    <rect x="15" y="225" width="340" height="115" rx="6" fill="#121826" stroke="#232d42"/>
+    <text x="25" y="240" font-family="sans-serif" font-size="8.5" font-weight="bold" fill="#9ca3af">URL SECURITY INDICATORS</text>
+    <rect x="290" y="230" width="55" height="14" rx="7" fill="#7f1d1d"/>
+    <text x="317" y="240" font-family="sans-serif" font-size="8" font-weight="bold" fill="#fca5a5" text-anchor="middle">3 Flagged</text>
+
+    <text x="25" y="260" font-family="sans-serif" font-size="9.5" fill="#e2e8f0">• Hyphen '-' in Domain (Brand Spoofing)</text>
+    <rect x="295" y="250" width="45" height="13" rx="3" fill="rgba(239,68,68,0.2)"/>
+    <text x="317" y="260" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#f87171" text-anchor="middle">RISK</text>
+
+    <text x="25" y="280" font-family="sans-serif" font-size="9.5" fill="#e2e8f0">• Multiple Subdomains (&gt;2 dots)</text>
+    <rect x="295" y="270" width="45" height="13" rx="3" fill="rgba(239,68,68,0.2)"/>
+    <text x="317" y="280" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#f87171" text-anchor="middle">RISK</text>
+
+    <text x="25" y="300" font-family="sans-serif" font-size="9.5" fill="#e2e8f0">• Path '//' Redirection Detected</text>
+    <rect x="295" y="290" width="45" height="13" rx="3" fill="rgba(239,68,68,0.2)"/>
+    <text x="317" y="300" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#f87171" text-anchor="middle">RISK</text>
+
+    <text x="25" y="320" font-family="sans-serif" font-size="9.5" fill="#e2e8f0">• Moderate URL Length (54-75 chars)</text>
+    <rect x="295" y="310" width="45" height="13" rx="3" fill="rgba(245,158,11,0.2)"/>
+    <text x="317" y="320" font-family="sans-serif" font-size="7.5" font-weight="bold" fill="#fbbf24" text-anchor="middle">WARN</text>
+
+    <!-- Guidance Box -->
+    <rect x="15" y="350" width="340" height="42" rx="4" fill="rgba(127,29,29,0.3)" stroke="#ef4444" stroke-width="0.5"/>
+    <text x="25" y="365" font-family="sans-serif" font-size="9" font-weight="bold" fill="#fca5a5">⚠️ Security Warning</text>
+    <text x="25" y="380" font-family="sans-serif" font-size="8.5" fill="#fecaca">Do not enter passwords or financial details. High risk of identity theft.</text>
+  </g>
+</svg>

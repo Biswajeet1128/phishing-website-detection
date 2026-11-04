@@ -1,0 +1,58 @@
+{
+    "track": "A",
+    "feature_names": [
+        "having_IP_Address",
+        "URL_Length",
+        "Shortining_Service",
+        "having_At_Symbol",
+        "double_slash_redirecting",
+        "Prefix_Suffix",
+        "having_Sub_Domain",
+        "SSLfinal_State",
+        "Domain_registeration_length",
+        "Favicon",
+        "port",
+        "HTTPS_token",
+        "Request_URL",
+        "URL_of_Anchor",
+        "Links_in_tags",
+        "SFH",
+        "Submitting_to_email",
+        "Abnormal_URL",
+        "Redirect",
+        "on_mouseover",
+        "RightClick",
+        "popUpWidnow",
+        "Iframe",
+        "age_of_domain",
+        "DNSRecord",
+        "web_traffic",
+        "Page_Rank",
+        "Google_Index",
+        "Links_pointing_to_page",
+        "Statistical_report"
+    ],
+    "num_features": 30,
+    "num_train_samples": 8844,
+    "num_test_samples": 2211,
+    "random_state": 42,
+    "training_times": {
+        "Decision_Tree": 6.912271738052368,
+        "Gaussian_NB": 0.010479450225830078,
+        "Categorical_NB": 0.01850724220275879,
+        "Random_Forest": 20.02280616760254,
+        "Logistic_Regression": 0.05577683448791504
+    },
+    "best_dt_params": {
+        "criterion": "entropy",
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2
+    },
+    "best_rf_params": {
+        "max_depth": null,
+        "min_samples_leaf": 1,
+        "min_samples_split": 2,
+        "n_estimators": 150
+    }
+}

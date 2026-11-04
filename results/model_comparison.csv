@@ -1,0 +1,11 @@
+Track,Algorithm,Accuracy,Precision,Recall (Phishing),F1-Score,ROC-AUC,False Negatives (FN),False Positives (FP),Training Time (s),Pred Latency (ms/sample)
+Model A (30 Features),Decision Tree,0.9701,0.9731,0.9592,0.9661,0.9778,40,26,6.912,0.0012
+Model A (30 Features),Gaussian NB,0.616,0.5359,0.999,0.6975,0.9677,1,848,0.01,0.0016
+Model A (30 Features),Categorical NB,0.9331,0.9379,0.9092,0.9233,0.9814,89,59,0.019,0.0008
+Model A (30 Features),Random Forest,0.976,0.9803,0.9653,0.9728,0.9963,34,19,20.023,0.0284
+Model A (30 Features),Logistic Regression,0.9276,0.9343,0.9,0.9168,0.9784,98,62,0.056,0.0006
+Model B (8 URL Features),Decision Tree,0.7313,0.6729,0.7663,0.7166,0.812,229,365,1.847,0.0015
+Model B (8 URL Features),Gaussian NB,0.5857,0.5169,1.0,0.6815,0.7616,0,916,0.002,0.0012
+Model B (8 URL Features),Categorical NB,0.7291,0.6619,0.7949,0.7223,0.7972,201,398,0.003,0.0003
+Model B (8 URL Features),Random Forest,0.7313,0.6751,0.7592,0.7147,0.826,236,358,12.548,0.0113
+Model B (8 URL Features),Logistic Regression,0.7101,0.6821,0.648,0.6646,0.783,345,296,0.02,0.0007

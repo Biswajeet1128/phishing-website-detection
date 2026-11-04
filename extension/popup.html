@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PhishShield AI</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="extension-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="logo-group">
+        <div class="logo-icon-wrapper">
+          <img src="icons/icon48.png" alt="Shield Logo" class="app-logo">
+        </div>
+        <div class="title-meta">
+          <h1 class="app-title">PhishShield <span class="ai-badge">AI</span></h1>
+          <span class="app-subtitle">Real-Time ML URL Threat Defense</span>
+        </div>
+      </div>
+      <div class="header-badge" id="engineBadge">Model B Active</div>
+    </header>
+
+    <!-- Active Tab URL Card -->
+    <section class="url-card">
+      <div class="card-label">CURRENT TAB URL</div>
+      <div class="url-display-row">
+        <span class="url-protocol-icon" id="protocolIcon">🔒</span>
+        <div class="url-text" id="currentUrlText" title="Loading URL...">Detecting active tab...</div>
+        <button class="btn-copy" id="btnCopyUrl" title="Copy URL">📋</button>
+      </div>
+    </section>
+
+    <!-- Primary Security Assessment Banner -->
+    <section class="status-banner" id="statusBanner">
+      <div class="status-icon-bubble" id="statusIconBubble">🛡️</div>
+      <div class="status-content">
+        <div class="status-heading" id="statusHeading">ANALYZING URL...</div>
+        <div class="status-message" id="statusMessage">Inspecting address bar features with Machine Learning...</div>
+      </div>
+    </section>
+
+    <!-- Risk & Confidence Metrics Card -->
+    <section class="metrics-grid" id="metricsSection">
+      <div class="metric-box">
+        <div class="metric-label">THREAT LEVEL</div>
+        <div class="metric-value" id="threatLevelText">--</div>
+        <div class="risk-meter-track">
+          <div class="risk-meter-fill" id="riskMeterFill" style="width: 0%;"></div>
+        </div>
+      </div>
+      <div class="metric-box">
+        <div class="metric-label">PHISHING RISK</div>
+        <div class="metric-value-large" id="riskScoreText">0%</div>
+        <div class="metric-subtext" id="confidenceSubtext">Confidence: --%</div>
+      </div>
+    </section>
+
+    <!-- URL Feature Risk Breakdown -->
+    <section class="features-section" id="featuresSection">
+      <div class="section-header">
+        <span class="section-title">URL SECURITY INDICATORS (8 FEATURES)</span>
+        <span class="feature-count-badge" id="featureFlagsBadge">0 Flagged</span>
+      </div>
+      
+      <div class="features-list" id="featuresList">
+        <!-- Feature items populated dynamically by popup.js -->
+      </div>
+    </section>
+
+    <!-- Manual Scanner Accordion / Input -->
+    <section class="manual-scan-section">
+      <div class="manual-scan-header">
+        <span>MANUAL URL SCANNER</span>
+      </div>
+      <div class="manual-scan-input-group">
+        <input type="text" id="manualUrlInput" placeholder="Enter custom URL to test (e.g. http://login-verify.com)..." spellcheck="false">
+        <button class="btn-scan" id="btnScanManual">Scan</button>
+      </div>
+    </section>
+
+    <!-- Security Recommendation Box -->
+    <section class="recommendations-box" id="recBox">
+      <div class="rec-title">🛡️ Security Guidance</div>
+      <div class="rec-text" id="recText">Always inspect the domain name in the address bar carefully before entering personal credentials.</div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <span>Decision Tree Inference • 100% On-Device • Zero Data Tracking</span>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="model_data.js"></script>
+  <script src="feature_extractor.js"></script>
+  <script src="model.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
